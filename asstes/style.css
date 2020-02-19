@@ -1,0 +1,23 @@
+#myBanner {
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 7px solid black;
+    background-color: gray;
+    margin: 0px;
+    width: 100%;
+
+}
+#sideBar{
+    background-color: grey;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    padding: 5%;
+
+}
+#place{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10%;
+    width: 100%;
+}
