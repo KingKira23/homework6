@@ -41,7 +41,7 @@ $.ajax({
 
 
         // var button = $("<button>")
-        // button.addclass("buttoninput")
+        // button.addClass("buttoninput")
         // button.text(houston)
         // last.append("button")
         let out = response;
@@ -67,23 +67,26 @@ $.ajax({
 
         for (i = 0; i < 5; i++) {
             var index = i * 8
-            console.log(response.list[index])
-            var day = response.list[index].dt_txt
-            var daytemp = response.list[index].main.temp
-            var dayhum = response.list[index].main.humidity
-            console.log(response.list[index].main.humidity)
+            console.log(response.list[index]);
+            var day = response.list[index].dt_txt;
+            var daytemp =response.list[index].main.temp;
+            var dayhum = response.list[index].main.humidity;
+            console.log(day);
 
             var fiveday = $("<div>")
-            fiveday.addclass("fiveDay")
             fiveDayList.append(fiveday)
-            var fdayD = $("<h5>")
+            fiveday.addClass("fiveDay")
+            fiveday.addClass("col-2")
+            var fdayD = $("<h3>")
             fdayD.text(day)
             fiveday.append(fiveday)
-            var fDaystats = $("<p>")
-            fDaystats.text("Temp:  " + daytemp)
-            fiveday.append(fDaystats)
-            fDaystats.text("Hum:  " + dayhum)
-            fiveday.append(fDaystats)
+            var fDaystatst = $("<p>")
+            fDaystatst.text("Temp:  " + daytemp)
+            fiveday.append(fDaystatst)
+            var fDaystatsh = $("<p>")
+            fDaystatsh.text("Hum:  " + dayhum)
+            fiveday.append(fDaystatsh)
+            
 
 
         }
